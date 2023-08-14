@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="open cart Cucumber parallel suite" verbose="2" parallel="classes" thread-count="1">
+    <test name="Login page tests">
+        <parameter name="email" value="cucumber@test.com"/>
+        <parameter name="password" value="cucumber"/>
+        <classes>
+            <class name="runner.TestRunner"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
